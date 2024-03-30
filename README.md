@@ -1,16 +1,9 @@
-# flutter_application_2
+Name: Klarenz N. Montesines
+Student Number: 2020-30576
+Section: UV-1L
 
-A new Flutter project.
+Application Description:
+A flutter application that implements the Checkout feature of the sample state management app from the lab class. In the My Cart page, there is a Checkout button that once the user pressed it, it will go to the Checkout page. The Checkout page includes the Item Details of the items in the cart, but no items will be shown if the cart is empty. There is also a total cost to pay that displays if there is an item in the cart but none will shown if there is no item in the cart. There is also a Pay Now button that once the user pressed it, it will show a 'Payment Successful' snackbar and it will go back to the My Catalog page, and the items in the cart, and total cost will reset. But, if there are no items in the cart, there will be no Pay Now button that will appear in the Checkout page.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+What I did in the code and the challenges I encountered: 
+To implement the Checkout feature, I made a separate dart file for the Checkout page also under the screen folder. I added the route for the Checkout page in the main.dart. I also added another ElevatedButton() in the MyCart.dart for the Checkout button, and when pressed, it will lead to the Checkout page. In the Checkout page, I added a condition that if the cart is empty, the button for Pay Now will not appear and it will not compute any of the cost of the items since there is no items in the cart. Using also the ElevatedButton() for the Pay Now button, that when it is pressed, it will lead back to My Catalog page and a snackbar will appear saying 'Payment Successful', and the cart and the total cost will reset to 0. While doing this exercise, I also encountered a little problem at first I struggled with how I can make the Pay Now button disappear if the cart is empty. But I resolved it using conditions. 
